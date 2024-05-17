@@ -183,20 +183,20 @@ header {
   background-size: cover;
   position: relative;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  filter: brightness(0.8);
 }
 
-.banner .box-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 33.33%;
-  height: 100%;
-  background-color: #00000000;
-  z-index: 99;
+.box-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 25%;
+    z-index: 99;
 
   & h3 {
     text-align: center;
-    margin-top: 80%;
     font-family: "IBM Plex Mono", monospace;
     font-weight: bold;
     font-style: normal;
@@ -209,8 +209,7 @@ header {
 
   /*cfg botão contato*/
   & .btn-contato button {
-    margin-left: 14rem;
-    margin-top: 5px;
+    margin-top: 25px;
     width: 120px;
     height: 40px;
     border: 0;
@@ -366,7 +365,7 @@ header {
 
 /* desenvolvedores */
 .desenvolvedores:has(.box[data-color="clr1"]:hover) {
-  background: linear-gradient(to bottom, #0a0928 1%, #451894);
+  background: linear-gradient(to bottom, #0a0928 1%, #cb58f8);
 }
 
 .desenvolvedores:has(.box[data-color="clr2"]:hover) {
@@ -378,7 +377,7 @@ header {
 }
 
 .desenvolvedores:has(.box[data-color="clr4"]:hover) {
-  background: linear-gradient(to bottom, #0a0928 1%, #8e43b3);
+  background: linear-gradient(to bottom, #0a0928 1%, #610391);
 }
 
 .desenvolvedores {
@@ -530,7 +529,7 @@ footer{
   margin-top: 30px;
   position: relative;
   width: 100%;
-  background: #3586ff;
+  background: #7f00b2;
   min-height: 100px;
   padding: 20px 50px;
   display: flex;
