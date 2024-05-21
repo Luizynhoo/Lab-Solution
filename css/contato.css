@@ -72,10 +72,11 @@ body{
   }
   
   .contact h3{
-    color: #0a0928;
+    color: var(--branco);
     font-weight: 500;
     font-size: 1.4em;
     margin-bottom: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
   
   /* form */
@@ -206,7 +207,7 @@ body{
   }
   
   .sci li i:hover{
-    color: #fff;
+    color: var(--cinza);
   }
   
   .map{
