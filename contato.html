@@ -18,10 +18,54 @@
 
 <body>
 
-  <div class="contateNos">
-    <div class="title">
-      <h2>Entre em Contato</h2>
+ <!-- loader -->
+ <div class="preloader" id="preloader">
+  <div class="loader" id="loader"></div>
+</div>
+
+<header id="header">
+  <div class="container">
+    <div class="flex">
+
+      <nav>
+        <!-- <a class="logo"  href="img/LOGO.png"></a> -->
+        <ul>
+          <li class="nav-item"><a href="#">Home</a></li>
+          <li class="nav-item"><a href="#servicos">Serviços</li>
+          <li class="nav-item"><a href="#" target="_blank">Sobre</a></li>
+        </ul>
+      </nav>
     </div>
+    <!-- flex -->
+
+    <div class="mobile-menu-icon">
+      <button onclick="menuShow()">
+        <img class="icon" src="img/menu_white_36dp.svg" alt="" />
+      </button>
+    </div>
+    <!-- mobile-menu-icon -->
+  </div>
+  <!--container-->
+
+  <!-- Menu mobile -->
+
+  <div class="mobile-menu">
+    <ul>
+      <li class="nav-item"><a href="#" class="nav-link">SERVIÇOS</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">HOME</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">HOME</a></li>
+
+      <div class="btn-contato">
+        <button><a href="#">CONTATO</a></button>
+      </div>
+    </ul>
+  </div>
+  <!-- mobile-menu -->
+</header>
+
+
+  <div class="contateNos">
+ 
     <div class="box">
       <!-- Form -->
       <div class="contact form">

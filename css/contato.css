@@ -7,6 +7,7 @@
     --preto: #000000;
     --cinza: #616161;
     --cinza2: #9e9e9e;
+    --cinza3: #b9b9b9;
 
     
   }
@@ -15,12 +16,170 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Georgia, "Times New Roman", Times, serif;
   }
 
 body{
     background: linear-gradient(90deg, #0a0928 1%, #8e43b3);
   }
+
+  /*Preload*/
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  animation: spinz 1.35s linear infinite;
+  width: 100%;
+  height: 100%;
+  background-color: #f6fbfd;
+  z-index: 999999;
+}
+
+.loader {
+  border: 16px solid #efeee8;
+  border-top: 16px solid #0032a0;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 1.35s linear infinite;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -60px;
+  margin-left: -60px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+
+  50% {
+    transform: rotate(360deg);
+    opacity: 1;
+  }
+
+  75% {
+    opacity: 1;
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+}
+
+@keyframes spinz {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  75% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+/* aumento html temporario! */
+/*html {
+  height: 500vh;
+}
+/**/
+
+header .container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+html {
+  scroll-behavior: smooth;
+  /*para a animação de rolagem ficar suave*/
+}
+
+.logo {
+  & img {
+    width: 12rem;
+  }
+}
+
+/*cfg todo header*/
+header {
+  width: 100%;
+  padding: 2px 2%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+  z-index: 9999;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+  /* Efeitos do menu*/
+  &.rolar {
+    background-color: var(--roxo);
+    padding: -50px;
+
+    & a {
+      color: var(--branco);
+      position: relative;
+    }
+
+    & i {
+      color: #1d1d77;
+    }
+
+    & a:hover {
+      text-decoration: none;
+      color: var(--branco);
+    }
+  }
+
+  /* Logo teste cfg*/
+  & i {
+    font-size: 40px;
+    color: #fff;
+  }
+
+  & ul {
+    list-style-type: none;
+    list-style: none;
+  }
+
+  & ul li {
+    display: inline-block;
+    margin: 0 20px;
+    transition: 0.3s;
+  }
+
+  & ul li a {
+    color: #fff;
+    font-size: 1.2em;
+  }
+
+  & li:hover {
+    transform: scale(1.3);
+    transition: 0.3s;
+  }
+
+  & a:hover {
+    text-decoration: none;
+    color: var(--cinza3);
+  }
+}
   
   .contateNos{
     position: relative;
@@ -129,7 +288,7 @@ body{
   .inputBox input[type="submit"]{
     background: var(--roxo2);
     color: var(--branco);
-    border: none;
+    border-radius: 10px ;
     font-size: 1.1em;
     max-width: 120px;
     font-weight: 500;
@@ -137,6 +296,11 @@ body{
     cursor: pointer;
     padding: 10px 10px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  }
+
+  .inputBox input[type="submit"]:hover{
+    transition-delay: 0.2s;
+    background: var(--cinza2);
   }
   
   .inputBox ::placeholder{
@@ -200,10 +364,8 @@ body{
   }
   
   .sci li i{
-    color: #fff;
+    color: var(--branco);
     font-size: 2em;
-    color: ro;
-    
   }
   
   .sci li i:hover{
@@ -392,3 +554,101 @@ footer {
   }
   
   /*Fim footer*/
+
+
+  /*Menu hamburguer*/
+
+.mobile-menu-icon {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+@media screen and (max-width: 730px) {
+  .rolar {
+    display: none;
+  }
+
+  .flex {
+    display: none;
+  }
+
+  .nav-bar {
+    padding: 1.5rem 4rem;
+  }
+
+  .btn-contato {
+    display: none;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+    position: absolute;
+    right: 2rem;
+
+    & button {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+    }
+  }
+
+  .mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+  }
+
+  .mobile-menu .nav-item {
+    display: block;
+    padding-top: 1.2rem;
+  }
+
+  .mobile-menu .btn-contato {
+    display: block;
+    padding: 1rem 2rem;
+    color: #fff;
+  }
+
+  .mobile-menu .btn-contato button {
+    width: 100%;
+  }
+
+  .open {
+    display: block;
+  }
+
+  .banner .box-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 33.33%;
+    height: 100%;
+    background-color: #00000000;
+    z-index: 99;
+
+    & h1 {
+      text-align: center;
+      margin-top: 300%;
+      font-family: "IBM Plex Mono", monospace;
+      font-weight: 400;
+      font-style: normal;
+      color: #ffffff;
+      text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff,
+        0 0 40px #00f, 0 0 70px #00f, 0 0 80px #00f, 0 0 100px #00f,
+        0 0 150px #00f;
+      /* sombras para criar o efeito de brilho */
+      font-size: 4em;
+      padding-left: 30px;
+    }
+
+    & p {
+      display: none;
+    }
+  }
+}
