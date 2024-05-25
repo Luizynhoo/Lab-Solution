@@ -297,7 +297,8 @@ header {
     padding: 10px 10px;
     cursor: pointer;
     padding: 10px 10px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: all .4s ease-in-out;
   }
   .inputBox input[type="submit"]:hover{
     background: var(--cinza2);

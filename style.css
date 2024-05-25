@@ -14,7 +14,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-decoration: none;
 }
 
 /*Preload*/
@@ -364,6 +365,61 @@ header {
 .card:hover .content P {
   opacity: 1;
   transform: translateY(0);
+}
+
+/*SOBRE*/
+.sobre{
+  margin-top: 10rem;
+}
+.sobre h1{
+  text-align: center;
+  margin-top: 0;
+  color: #ffffff;
+  text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff,
+    0 0 40px var(--roxo2), 0 0 70px var(--roxo2), 0 0 80px var(--roxo2),
+    0 0 100px var(--roxo2), 0 0 150px var(--roxo2);
+  font-size: 3rem;
+}
+.sobre-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background: linear-gradient(to bottom, #0a0928 1%,#0a0928 1%);
+  margin-top: 50px;
+}
+
+.sobre-box .sobre-image {
+  margin-right: 50px;
+  width: 400px;
+}
+
+.sobre-box .sobre-body {
+  width: 600px;
+}
+
+.sobre-box .sobre-body {
+  font-size: 18px;
+}
+
+.sobre-body p {
+  line-height: 30px;
+  color: var(--branco);
+}
+
+.sobre-body a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 10px;
+  border: 1px solid var(--roxo);
+  font-size: 15px;
+  color: var(--branco);
+  transition: all .4s ease-in-out;
+  border-radius: 5px;
+}
+
+.sobre-body a:hover {
+  background-color: var(--cinza2);
 }
 
 
