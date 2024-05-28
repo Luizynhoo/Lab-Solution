@@ -6,7 +6,7 @@
   --preto: #000000;
   --cinza: #616161;
   --cinza2: #9e9e9e;
-
+  --verde: #0dc50d;
 
 }
 
@@ -112,7 +112,7 @@ body {
 
 .logo {
   & img {
-    width: 12rem;
+    width: 15rem;
   }
 }
 
@@ -216,12 +216,12 @@ header {
   /*cfg botão contato*/
   & .btn-contato button {
     margin-top: 25px;
-    width: 120px;
-    height: 40px;
+    width: 100px;
+    height: 30px;
     border: 0;
-    border-radius: 12px;
-    background-color: #50128f;
-    color: #fff;
+    border-radius: 10px;
+    background-color: var(--roxo2);
+    color: var(--branco);
     cursor: pointer;
     transition: 0.2s;
     margin-right: 25px;
@@ -229,6 +229,10 @@ header {
 
   .btn-contato:hover {
     scale: 1.1;
+  }
+
+  .btn-contato button:hover{
+    background-color: var(--cinza2);
   }
 }
 
@@ -412,15 +416,16 @@ header {
   display: inline-block;
   margin-top: 20px;
   padding: 10px 10px;
-  border: 1px solid var(--roxo);
+  background-color: var(--roxo2);
   font-size: 15px;
   color: var(--branco);
   transition: all .4s ease-in-out;
   border-radius: 5px;
+  text-decoration: none;
 }
 
 .sobre-body a:hover {
-  background-color: var(--cinza2);
+  background-color: var(--verde);
 }
 
 
@@ -549,11 +554,6 @@ header {
     line-height: 0.8em;
   }
 
-  & .container .box .glass span {
-    font-weight: 400;
-    font-size: 0.5em;
-  }
-
   & .container .box ul {
     position: absolute;
     bottom: 0;
@@ -564,6 +564,7 @@ header {
   }
 
   & .container .box ul a {
+    margin-bottom: -10px;
     color: var(--branco);
     font-size: 1.25em;
     scale: 0;
