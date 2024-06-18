@@ -267,8 +267,8 @@ header {
   }
 }
 
-/* servicos */
 
+/* servicos */
 .servicos {
   & h1 {
     text-align: center;
@@ -371,6 +371,7 @@ header {
   opacity: 1;
   transform: translateY(0);
 }
+
 
 /*SOBRE*/
 .sobre{
