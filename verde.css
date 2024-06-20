@@ -106,8 +106,6 @@ html {
 body {
 
   background: linear-gradient(to bottom, #006310 1%, #006310);
-  #71ff9c 1%,
-  #006310
 }
 
 .logo {
@@ -417,7 +415,7 @@ header {
 
 
 /*SOBRE2*/
-.sobre2 {}
+/*.sobre2 {}*/
 
 .sobre2 h1 {
   text-align: center;

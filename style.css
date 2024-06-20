@@ -396,12 +396,19 @@ header {
 }
 
 .sobre-box .sobre-image {
-  margin-right: 50px;
-  width: 400px;
+  position: absolute;
+
+  img{
+    width: 50rem;
+    height: 30rem;
+    margin-right: 45rem;
+  }
 }
 
 .sobre-box .sobre-body {
   width: 600px;
+  margin-left: 30rem;
+  z-index: 10;
 }
 
 .sobre-box .sobre-body {
@@ -411,9 +418,11 @@ header {
 .sobre-body p {
   line-height: 30px;
   color: var(--branco);
+  text-align: justify;
 }
 
 .sobre-body a {
+  margin-top: 10px;
   display: inline-block;
   margin-top: 20px;
   padding: 10px 10px;
