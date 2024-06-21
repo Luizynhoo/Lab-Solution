@@ -70,34 +70,34 @@
       <!-- Form -->
       <div class="contact form">
         <h3>Envie uma Mensagem</h3>
-        <form>
+        <form action="https://api.staticforms.xyz/submit" method="post">
           <div class="formBox">
             <div class="row50">
               <div class="inputBox">
                 <span>Nome:</span>
-                <input type="text" placeholder="Digite seu nome..." />
+                <input type="text" name="name" placeholder="Digite seu nome..." />
               </div>
               <div class="inputBox">
                 <span>Sobrenome:</span>
-                <input type="text" placeholder="Digite seu sobrenome..." />
+                <input type="text" name="subject" placeholder="Digite seu sobrenome..." />
               </div>
             </div>
 
             <div class="row50">
               <div class="inputBox">
                 <span>Email:</span>
-                <input type="text" placeholder="Digite seu email..." />
+                <input type="text" name="email" placeholder="Digite seu email..." />
               </div>
               <div class="inputBox">
                 <span>Telefone:</span>
-                <input type="text" placeholder="DDD" />
+                <input type="text" name="phone" placeholder="DDD" />
               </div>
             </div>
 
             <div class="row100">
               <div class="inputBox">
                 <span>Mensagem:</span>
-                <textarea placeholder="Digite sua Mensagem..."></textarea>
+                <textarea placeholder="Digite sua Mensagem..." name="message"></textarea>
               </div>
             </div>
 
@@ -107,6 +107,9 @@
               </div>
             </div>
           </div>
+
+          <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/obrigado.html">
+          <input type="hidden" name="accessKey" value="65b42ab1-7ce1-47ef-953e-2f9258ebc192">
         </form>
       </div>
 
