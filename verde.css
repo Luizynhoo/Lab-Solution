@@ -648,7 +648,7 @@ ul.social_icon {
   display: none;
 }
 
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 767px) {
   .rolar {
     display: none;
   }
