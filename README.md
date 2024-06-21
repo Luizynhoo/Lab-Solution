@@ -6,4 +6,4 @@ A Lab Solution é uma assistencia tecnica de computadores, serviço desktop
 ## Tutorial passo a passo do projeto
 1- Tela principal
 
-![Tela-Nome](https://github.com/Luizynhoo/Lab-Solution/img/telas/tela1.png)
+![Tela-Nome](https://github.com/Luizynhoo/Lab-Solution/assetsimg/telas/tela1.png)
