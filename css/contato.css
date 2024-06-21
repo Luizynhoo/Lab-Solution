@@ -582,11 +582,6 @@ ul.social_icon {
 
 
 
-
-
-
-
-
 /*Menu hamburguer*/
 
 .mobile-menu-icon {
@@ -617,7 +612,7 @@ ul.social_icon {
   .mobile-menu-icon {
     display: block;
     position: absolute;
-    right: 2rem;
+    left: 2rem;
 
     & button {
       background-color: transparent;
@@ -631,7 +626,7 @@ ul.social_icon {
     flex-direction: column;
     text-align: center;
     padding-bottom: 1rem;
-    background: rgba(255, 255, 255, 0.1);
+    background: var(--roxo3);
     border-radius: 10px;
   }
 
