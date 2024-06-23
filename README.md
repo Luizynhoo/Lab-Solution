@@ -16,3 +16,6 @@
 4- *Tela de Serviço* 
 ![Tela de Serviços](https://github.com/Luizynhoo/Lab-Solution/blob/ab30cfdfb562d8ba61cdd0fa904edb404346e600/img/telas/tela8.png)
 
+5- *Tela de Ordem de Serviço do Cliente*
+![Tela de Preenchimento do Cliente](https://github.com/Luizynhoo/Lab-Solution/blob/9eb27392409f92f940699785b77cf34024ecee3f/img/telas/tela12.png)
+
