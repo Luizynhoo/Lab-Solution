@@ -1,7 +1,8 @@
 ## Nesse documento você acompanha a criação do nosso Projeto Integrador do Curso Técnico em Informática do Senac Tatuapé.
 
-## Projeto -> Assistencia tecnica 
-A Lab Solution é uma assistencia tecnica de computadores, serviço desktop
+## Projeto -> A Lab Solution é uma Assistência técnica que tem como objetivo principal garantir o bom funcionamento e a longevidade do seu computador.
+
+Isso inclui a resolução de problemas relacionados a hardware e software, como diagnósticos, troca de peças, formatação, instalação de programas, pode realizar manutenções preventivas para evitar falhas futuras e garantir a satisfação do cliente.
 
 ## Tutorial passo a passo do projeto
 1- Tela principal de cadastro 
