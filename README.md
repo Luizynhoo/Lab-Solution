@@ -19,5 +19,8 @@
 5- *Tela de Ordem de Serviço do Cliente*
 ![Tela de Preenchimento do Cliente](https://github.com/Luizynhoo/Lab-Solution/blob/9eb27392409f92f940699785b77cf34024ecee3f/img/telas/tela12.png)
 
-6- *Tela de Cadastro do +Verde*
+7- *Tela de Cadastro do +Verde*
 ![Tela de Cadastro do + Verde](https://github.com/Luizynhoo/Lab-Solution/blob/0a558d3e8cef64632ab3a8b1b45517bb1ade4e46/img/telas/tela13.png)
+
+8- *Tela dos Desenvolvedores*
+![Tela dos Desenvolvedores](https://github.com/Luizynhoo/Lab-Solution/blob/8805e99d58388d07c603b2f6308b0b1d04077b85/img/telas/tela14.png)
