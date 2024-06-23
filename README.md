@@ -4,8 +4,6 @@
 A Lab Solution é uma assistencia tecnica de computadores, serviço desktop
 
 ## Tutorial passo a passo do projeto
-1- Tela principal
+1- Tela principal de cadastro 
 
-![Tela-Nome](https://github.com/GustavoTeodoroGabilan/Art-Burguer/assets/115747012/50bf19d4-2c19-47c8-be16-7a1daa27112f)
-
-![Tela-Nome](https://github.com/Luizynhoo/Lab-Solution/img/telas/tela1.png)
+![Tela de cadastro](https://github.com/Luizynhoo/Lab-Solution/blob/8671cbb73d0df31fddb9066416cef203997c04b9/img/telas/tela1.png)
