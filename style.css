@@ -770,6 +770,10 @@ ul.social_icon {
 
 @media screen and (max-width: 767px) {
 
+body{
+  
+}
+
 header {
   width: 30%;
   padding: 20px 2%;
@@ -777,6 +781,7 @@ header {
   left: 0;
   transition: 0.5s;
   z-index: 9999;
+  position: fixed;
 }
 
 .navbar-brand{
@@ -967,6 +972,7 @@ header {
     padding-bottom: 1rem;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
+    width: 21em
   }
 
   .mobile-menu .nav-item {
@@ -978,6 +984,7 @@ header {
     display: block;
     padding: 1rem 2rem;
     color: #fff;
+    position: relative;
   }
 
   .mobile-menu .btn-contato button {
