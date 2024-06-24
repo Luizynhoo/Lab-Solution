@@ -390,18 +390,16 @@ header {
 }
 
 .sobre-box .sobre-image {
-  position: absolute;
+  margin-right: 50px;
+  width: 400px;
 
   img{
-    width: 50rem;
-    height: 30rem;
-    margin-right: 45rem;
+    width: 290px;
   }
 }
 
 .sobre-box .sobre-body {
   width: 600px;
-  margin-left: 30rem;
   z-index: 10;
 }
 
