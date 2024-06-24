@@ -832,4 +832,28 @@ ul.social_icon {
       display: none;
     }
   }
+
+  #insta {
+    background: linear-gradient(to bottom right, #f9ce34, #ee2a7b, #6228d7);
+
+    .icon {
+      color: #fff;
+    }
+  }
+
+  #github {
+    background: #10047a;
+
+    .icon {
+      color: #fff;
+    }
+  }
+
+  #X {
+    background: #383838;
+
+    .icon {
+      color: #fff;
+    }
+  }
 }
