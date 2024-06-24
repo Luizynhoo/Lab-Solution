@@ -649,6 +649,105 @@ ul.social_icon {
 }
 
 @media screen and (max-width: 767px) {
+
+
+  header {
+    width: 100%;
+    padding: 25px 2%;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    z-index: 9999;
+    position: fixed;
+  }
+
+  .mobile-menu-icon{
+    margin-right: 78%;
+
+  }
+
+  .mobile-menu .btn-contato button {
+    width: 100%;
+    padding: 3px 15px;
+    border-radius: 10px;
+
+    a {
+      color: var(--verde2);
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+  }
+
+
+  .sobre-box .sobre-image {
+    img {
+        width: 22rem;
+        margin-left: 3rem;
+    }
+}
+
+.sobre{
+  margin-top: 2rem;
+}
+
+.sobre h1 {
+  margin-top: 25px;
+}
+
+.sobre-body p {
+  text-align: justify;
+
+}
+
+  .sobre-box{
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+  }
+
+
+  .sobre-box .sobre-body {
+    font-size: 18px;
+    width: 100%;
+    margin-left: 0rem;
+    z-index: 10;
+}
+
+  .sobre-box2{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+
+  .sobre-box2 .sobre-image {
+    img {
+        border-radius: 15px;
+        width: 20rem;
+        height: 19rem;
+        margin-right: 0rem;
+    }
+}
+
+  .sobre-box2 .sobre-body2 {
+    margin-top: 2rem;
+    font-size: 18px;
+    width: 100%;
+    margin-left: 0rem;
+    z-index: 10;
+}
+
+
+  .servicos{
+    padding: 20px;
+  }
+
+  .card{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+
   .rolar {
     display: none;
   }
@@ -682,7 +781,7 @@ ul.social_icon {
     flex-direction: column;
     text-align: center;
     padding-bottom: 1rem;
-    background: rgba(255, 255, 255, 0.1);
+    background: var(--verde2);
     border-radius: 10px;
   }
 
