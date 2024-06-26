@@ -561,7 +561,7 @@ header {
 
   & .container .box ul {
     position: absolute;
-    bottom: 0;
+    bottom: 9px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -773,11 +773,9 @@ ul.social_icon {
 
 @media screen and (max-width: 767px) {
 
-  body {}
-
   header {
-    width: 30%;
-    padding: 20px 2%;
+    width: 100%;
+    padding: 25px 2%;
     top: 0;
     left: 0;
     transition: 0.5s;
@@ -785,8 +783,9 @@ ul.social_icon {
     position: fixed;
   }
 
-  .navbar-brand {
-    display: none;
+  .mobile-menu-icon {
+    margin-right: 78%;
+
   }
 
   .box-container {
@@ -1063,6 +1062,10 @@ ul.social_icon {
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 
+  .logo {
+    display: none;
+  }
+
   .banner {
     width: 100%;
     height: 75vh;
@@ -1077,11 +1080,16 @@ ul.social_icon {
   }
 
   header {
-    width: 65%;
+    width: 100%;
     padding: 0px 0%;
     top: 0;
     left: 0;
     z-index: 999;
+  }
+
+  .mobile-menu-icon {
+    margin-right: 78%;
+    margin-top: 4rem;
   }
 
   .box-container {
@@ -1092,16 +1100,99 @@ ul.social_icon {
     }
   }
 
+  .cards.flex4 {
+    display: flex;
+    margin-top: 30px;
+    align-content: stretch;
+    align-items: center;
+  }
 
-  .servicos {
+
+  .content {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+  }
+
+  .card::after {
+    display: none;
+  }
+
+  .content h2,
+  .content p {
+    opacity: 100%;
+    transition: 0.4s 0.2s ease;
+    font-size: 2.2em;
+  }
+
+  .content h2 {
+    margin-bottom: 12px;
+    color: var(--branco);
+    scale: 0;
+  }
+
+
+  .content h2 {
+    margin-bottom: 12px;
+    scale: 1;
+    color: var(--branco);
+  }
+
+  #card2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .sobre-box {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
 
-    & h1 {
-      text-align: center;
-      margin-top: 5rem;
-    }
+
+  .sobre {
+    margin-top: 0rem;
+    margin-bottom: 5rem;
+  }
+
+
+  .sobre-box .sobre-image {
+    position: relative;
+    align-items: center;
+
+    img {
+      width: 29rem;
+      height: 19rem;
+      margin-left: 32px;
+  }
+  }
+
+  .sobre-box .sobre-body {
+    width: 100%;
+    margin-left: 0rem;
+    z-index: 10;
+  }
+
+
+  .sobre-body p {
+    line-height: 28px;
+    color: var(--branco);
+    text-align: justify;
+  }
+
+  .sobre-body a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 10px;
+    font-weight: bold;
+    background-color: var(--verde);
+    font-size: 15px;
+    color: var(--branco);
+    border-radius: 5px;
+    text-decoration: none;
   }
 
   .cards.flex4 {
@@ -1156,6 +1247,12 @@ ul.social_icon {
     margin-bottom: 20px;
   }
 
+  .desenvolvedores {
+    & .container {
+        margin-bottom: 5rem;
+    }
+}
+
 
   .nav-bar {
     padding: 1.5rem 4rem;
@@ -1175,7 +1272,7 @@ ul.social_icon {
   .mobile-menu-icon {
     display: block;
     position: absolute;
-    right: 2rem;
+    right: 4rem;
 
     & button {
       background-color: transparent;
