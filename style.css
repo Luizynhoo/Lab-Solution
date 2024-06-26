@@ -780,6 +780,12 @@ ul.social_icon {
 
 @media screen and (max-width: 767px) {
 
+  #topo {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+  }
+
   header {
     width: 100%;
     padding: 25px 2%;
@@ -1068,6 +1074,12 @@ ul.social_icon {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+
+  #topo {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+  }
 
   .logo {
     display: none;
